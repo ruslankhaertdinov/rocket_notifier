@@ -15,7 +15,6 @@ class ReportScheduler
   sidekiq_options retry: 1
 
   def perform
-    puts Time.now
     notifier = RocketChat::Notifier.new(ENV['WEBHOOK_URL'], channel: ENV['CHANNEL'], username: ENV['USERNAME'])
     notifier.ping(ENV['MESSAGE'], icon_emoji: ENV['ICON_EMOJI'])
   end
