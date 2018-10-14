@@ -1,10 +1,8 @@
 # Time in UTC
 :schedule:
   notification_1:
-    cron: '0 11 * * 6'
-    # cron: '0 11 * * 5'
+    cron: '0 11 * * 5'
     class: ReportScheduler
   notification_2:
-    cron: '0 12 * * 6'
-    # cron: '0 12 * * 5'
+    cron: '0 12 * * 5'
     class: ReportScheduler
